@@ -11,7 +11,7 @@ html {
 } /*16px*/
 
 body {
-  background: #90b4ce;
+  background: #e6e8ee;
   font-family: "Play", sans-serif;
   font-weight: 400;
   line-height: 1.75;
@@ -84,8 +84,9 @@ section {
 }
 .reviews span {
   font-size: 0.85em;
-  color: var(--clr-primary-5);
+  color: gold;
   margin-right: 1rem;
+  font-weight: 700;
 }
 .img {
   width: 150px;
@@ -100,17 +101,20 @@ section {
 h4 {
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--clr-primary-5);
+  color: #e6e8ee;
   letter-spacing: var(--spacing);
-  margin: 0.5rem 0;
+  margin-top: 1rem;
 }
 .title {
   margin-bottom: 1.25rem;
   letter-spacing: 2px;
   text-transform: capitalize;
+  color: #808cac;
+  font-weight: 400;
+  margin-top: 0.5rem;
 }
 .text {
-  color: rgb(54, 48, 48);
+  color: #b3bacd;
   line-height: 1.8;
   max-width: 35em;
   margin: 0 auto;
@@ -123,13 +127,14 @@ h4 {
 }
 .quote-icon {
   font-size: 3rem;
-  margin-top: 2rem;
+  margin-top: 0.75rem;
   color: gold;
 }
+
 .btn {
   position: absolute;
-  top: 175px;
-  background: grey;
+  top: 300px;
+  background: #000c2c;
   color: white;
   padding: 0.25rem 0.35rem;
   border-radius: 0.25rem;
@@ -145,9 +150,12 @@ h4 {
 
 .slide-container {
   display: flex;
+  justify-content: center;
   position: relative;
   height: 450px;
   overflow: hidden;
+  background-color: #192f69;
+  border-radius: 0.25rem;
 }
 .slide {
   position: absolute;
@@ -157,6 +165,7 @@ h4 {
   left: 0;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  margin-top: 1rem;
 }
 .slide.active {
   opacity: 1;
@@ -167,4 +176,23 @@ h4 {
 }
 .slide.last {
   transform: translateX(-100%);
+}
+@media screen and (max-width: 426px) {
+  .reviews {
+    margin-bottom: 2rem;
+  }
+  .img {
+    width: 120px;
+    height: 120px;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+  .text {
+    font-size: 0.9rem;
+    width: 80vw;
+  }
+  .fa-quote-right {
+    font-size: 3rem;
+  }
 }
