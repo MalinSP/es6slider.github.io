@@ -12,5 +12,5 @@ Completed [project](https://malinsp.github.io/es6slider.github.io/)
 
 ---
 
-Screenshots
+#### Screenshots
 ![image](./screenshot.png)
